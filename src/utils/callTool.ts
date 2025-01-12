@@ -1,3 +1,6 @@
+import { RunnableConfig } from "@langchain/core/runnables";
+import { GraphState } from "../state/GraphState";
+
 export const callTool = async (
   data: typeof GraphState.State,
   config?: RunnableConfig

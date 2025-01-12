@@ -15,6 +15,7 @@ import {
   SPECIALIST_PROMPT,
 } from "./src/constants/prompts.js";
 import { response_tool } from "./src/tools/responseTool.js";
+import { useAgent } from "./src/utils/useAgent.js";
 
 const OutputSchema = z.object({
   response: z.string().describe("message to user or specialist agent"),
@@ -22,7 +23,7 @@ const OutputSchema = z.object({
 });
 
 const responseTool = response_tool;
-
+// useAgent("");
 console.log("chal rha h");
 // UNCOMMENT TO ENCRYPT GET THE GEMINI KEY
 // const encryptedData = fs.readFileSync("gemini.txt", "utf8");

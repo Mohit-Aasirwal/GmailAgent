@@ -1,3 +1,7 @@
+import { RunnableConfig } from "@langchain/core/runnables";
+import { llm } from "../LLM/ChatVertexAI";
+import { GraphState } from "../state/GraphState";
+
 const specialistAgent = async (
   data: typeof GraphState.State,
   config?: RunnableConfig
